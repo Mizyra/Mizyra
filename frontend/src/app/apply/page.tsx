@@ -12,7 +12,7 @@ const highlights = [
 export default function ApplyPage() {
   return (
     <PageReveal>
-      <section className="page-hero section-shell reveal-up">
+      <section className="page-hero section-shell reveal-up px-4 sm:px-6 md:px-8">
         <SectionHeading
           eyebrow="Consultation"
           title="Request a project consultation"

@@ -44,7 +44,7 @@ export default function Navbar() {
                   alt="MIZYRA Institute of Technology logo"
                   width={80}
                   height={60}
-                  className="h-16 w-24 object-contain"
+                  className="h-12 w-16 shrink-0 object-contain sm:h-14 sm:w-20"
                   priority
                 />
                 <span className="min-w-0 leading-tight sm:whitespace-nowrap">

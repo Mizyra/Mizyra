@@ -91,7 +91,53 @@ h6 {
 }
 
 .section-shell {
-  @apply mx-auto max-w-7xl px-4 md:px-8;
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 md:px-8;
+}
+
+@media (max-width: 639px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  button,
+  input,
+  textarea {
+    overflow-wrap: anywhere;
+  }
+
+  .page-hero {
+    padding-block: 5.5rem 2rem;
+  }
+
+  .hero-kicker {
+    gap: 0.75rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hero-kicker span {
+    width: 2.5rem;
+  }
+
+  .hero-side-note {
+    gap: 0.8rem;
+    margin-top: -2rem;
+    letter-spacing: 0.18em;
+  }
+
+  .hero-bottom-ui {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hero-gold-cta,
+  .hero-video-cta {
+    width: 100%;
+  }
 }
 
 .page-hero {

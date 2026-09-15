@@ -60,11 +60,11 @@ export default function ProjectsPage() {
           <div className="grid gap-4">
             {spotlightProjects.map((project) => (
               <div key={project.title} className="glass-panel overflow-hidden">
-                <div className="flex items-center gap-4 p-4">
-                  <div className="relative h-20 w-28 overflow-hidden rounded-2xl border border-moonBorder/70">
-                    <Image src={project.image} alt={project.title} fill sizes="112px" className="object-cover" />
+                <div className="flex items-start gap-3 p-4 sm:items-center sm:gap-4">
+                  <div className="relative h-16 w-20 shrink-0 overflow-hidden rounded-2xl border border-moonBorder/70 sm:h-20 sm:w-28">
+                    <Image src={project.image} alt={project.title} fill sizes="(min-width: 640px) 112px, 80px" className="object-cover" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="text-lg font-semibold text-moonInk">{project.title}</h3>
                     <p className="mt-1 text-xs text-moonMuted">{project.description}</p>
                   </div>

@@ -102,11 +102,11 @@ export default function HomePage() {
                 Start Where Others Stop
               </p>
 
-              <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <Link href="/#programs" className="neo-btn-primary btn-glow gold-shimmer rounded-full px-7 py-3 text-xs font-semibold uppercase tracking-[0.25em]">
+              <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+                <Link href="/#programs" className="neo-btn-primary btn-glow gold-shimmer rounded-full px-7 py-3 text-center text-xs font-semibold uppercase tracking-[0.25em]">
                   Explore Programs
                 </Link>
-                <Link href="/#about" className="neo-btn-secondary btn-glow rounded-full px-7 py-3 text-xs font-semibold uppercase tracking-[0.25em]">
+                <Link href="/#about" className="neo-btn-secondary btn-glow rounded-full px-7 py-3 text-center text-xs font-semibold uppercase tracking-[0.25em]">
                   Discover MIZYRA
                 </Link>
               </div>

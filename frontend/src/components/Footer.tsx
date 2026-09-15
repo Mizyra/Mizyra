@@ -56,7 +56,7 @@ export default function Footer() {
             <h4 className="font-semibold text-moonInk">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-moonInk/70">
               <li>
-                <a href="mailto:mizyra.instituteoftechnology@gmail.com" className="hover:text-moonGreen">
+                <a href="mailto:mizyra.instituteoftechnology@gmail.com" className="break-words hover:text-moonGreen">
                   mizyra.instituteoftechnology@gmail.com
                 </a>
               </li>
