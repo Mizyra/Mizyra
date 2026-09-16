@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Play, Rocket } from "lucide-react";
@@ -6,7 +6,7 @@ import { projectShowcase } from "@/data/siteData";
 
 export const metadata: Metadata = {
   title: "Technology Projects & Case Studies",
-  description: "Explore MIZYRA Institute of Technology projects spanning software development, AI, computer vision, full-stack platforms, and digital transformation case studies.",
+  description: "Explore MIZYRA projects spanning software development, AI, computer vision, full-stack platforms, and digital transformation case studies.",
   alternates: {
     canonical: "https://www.mizyra.org/projects"
   },

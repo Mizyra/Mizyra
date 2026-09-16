@@ -1,11 +1,11 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { CalendarCheck2, Mail, MapPin, MessageCircle, PhoneCall } from "lucide-react";
 import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
   title: "Contact MIZYRA",
-  description: "Contact MIZYRA Institute of Technology for software development, AI solutions, research support, UI/UX design, and digital growth services in Chennai and Tamil Nadu.",
+  description: "Contact MIZYRA for software development, AI solutions, research support, UI/UX design, and digital growth services in Chennai and Tamil Nadu.",
   alternates: {
     canonical: "https://www.mizyra.org/contact"
   },

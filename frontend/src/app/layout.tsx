@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -20,14 +20,14 @@ const displayFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mizyra.org"),
   title: {
-    default: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
+    default: "MIZYRA | Software Development, AI & Research Solutions",
     template: "%s | MIZYRA"
   },
   description:
-    "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
-  applicationName: "MIZYRA Institute of Technology",
+    "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+  applicationName: "MIZYRA",
   keywords: [
-    "MIZYRA Institute of Technology",
+    "MIZYRA",
     "software development company",
     "AI consulting",
     "machine learning solutions",
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.mizyra.org/",
-    title: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
+    title: "MIZYRA | Software Development, AI & Research Solutions",
     description:
-      "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
     siteName: "MIZYRA",
     locale: "en_US",
     images: [
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "MIZYRA Institute of Technology"
+        alt: "MIZYRA"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
+    title: "MIZYRA | Software Development, AI & Research Solutions",
     description:
-      "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
     images: ["/opengraph-image.png"]
   },
   icons: {
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "MIZYRA Institute of Technology",
+      name: "MIZYRA",
       alternateName: "MIZYRA",
       url: "https://www.mizyra.org/",
       logo: "https://www.mizyra.org/logo1.png",
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       },
       areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],
       description:
-        "MIZYRA Institute of Technology provides software development, AI & machine learning, UI/UX design, research support, and digital transformation services.",
+        "MIZYRA provides software development, AI & machine learning, UI/UX design, research support, and digital transformation services.",
       sameAs: ["https://www.mizyra.org/"],
       contactPoint: {
         "@type": "ContactPoint",
@@ -117,7 +117,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "MIZYRA Institute of Technology",
+      name: "MIZYRA",
       alternateName: "MIZYRA",
       url: "https://www.mizyra.org/",
       description:
@@ -127,7 +127,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      name: "MIZYRA Institute of Technology",
+      name: "MIZYRA",
       url: "https://www.mizyra.org/",
       image: "https://www.mizyra.org/logo1.png",
       areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],

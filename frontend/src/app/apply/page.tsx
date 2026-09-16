@@ -3,7 +3,7 @@ import ApplyForm from "@/components/ApplyForm";
 
 export const metadata: Metadata = {
   title: "Request a Project Consultation",
-  description: "Discuss your software development, AI, design, or digital growth project with MIZYRA Institute of Technology.",
+  description: "Discuss your software development, AI, design, or digital growth project with MIZYRA.",
   alternates: {
     canonical: "https://www.mizyra.org/apply"
   },

@@ -3,7 +3,7 @@ import LoginForm from "@/components/LoginForm";
 
 export const metadata: Metadata = {
   title: "Student Login",
-  description: "Student login for MIZYRA Institute of Technology learners.",
+  description: "Student login for MIZYRA learners.",
   robots: {
     index: false,
     follow: false
