@@ -20,18 +20,24 @@ const displayFont = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mizyra.org"),
   title: {
-    default: "MIZYRA | AI & Software Technology",
+    default: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
     template: "%s | MIZYRA"
   },
   description:
-    "MIZYRA is a technology company building innovative AI, software, and intelligent digital solutions for the future.",
-  applicationName: "MIZYRA",
+    "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+  applicationName: "MIZYRA Institute of Technology",
   keywords: [
-    "MIZYRA",
-    "AI software",
-    "software development",
-    "digital products",
-    "technology solutions"
+    "MIZYRA Institute of Technology",
+    "software development company",
+    "AI consulting",
+    "machine learning solutions",
+    "web development company",
+    "UI UX design services",
+    "research and development support",
+    "digital marketing agency",
+    "technology solutions in Chennai",
+    "Tamil Nadu IT company",
+    "Nagercoil software services"
   ],
   alternates: {
     canonical: "https://www.mizyra.org/"
@@ -39,26 +45,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.mizyra.org/",
-    title: "MIZYRA | AI & Software Technology",
+    title: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
     description:
-      "MIZYRA is a technology company building innovative AI, software, and intelligent digital solutions for the future.",
+      "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
     siteName: "MIZYRA",
     locale: "en_US",
     images: [
       {
-        url: "/logo1.png",
-        width: 1080,
-        height: 608,
-        alt: "MIZYRA"
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MIZYRA Institute of Technology"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "MIZYRA | AI & Software Technology",
+    title: "MIZYRA Institute of Technology | Software Development, AI & Research Solutions",
     description:
-      "MIZYRA is a technology company building innovative AI, software, and intelligent digital solutions for the future.",
-    images: ["/logo1.png"]
+      "MIZYRA Institute of Technology delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+    images: ["/opengraph-image.png"]
   },
   icons: {
     icon: "/favicon.png",
@@ -67,7 +73,14 @@ export const metadata: Metadata = {
   },
   robots: {
     index: true,
-    follow: true
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
   }
 };
 
@@ -76,16 +89,52 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      name: "MIZYRA",
+      name: "MIZYRA Institute of Technology",
+      alternateName: "MIZYRA",
       url: "https://www.mizyra.org/",
-      logo: "https://www.mizyra.org/logo1.png"
+      logo: "https://www.mizyra.org/logo1.png",
+      email: "mizyra.instituteoftechnology@gmail.com",
+      telephone: "+91 93631 56825",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Chennai",
+        addressRegion: "Tamil Nadu",
+        addressCountry: "IN"
+      },
+      areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],
+      description:
+        "MIZYRA Institute of Technology provides software development, AI & machine learning, UI/UX design, research support, and digital transformation services.",
+      sameAs: ["https://www.mizyra.org/"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: "+91 93631 56825",
+        email: "mizyra.instituteoftechnology@gmail.com",
+        areaServed: "IN",
+        availableLanguage: ["English"]
+      }
     },
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      name: "MIZYRA",
-      alternateName: "Mizyra",
-      url: "https://www.mizyra.org/"
+      name: "MIZYRA Institute of Technology",
+      alternateName: "MIZYRA",
+      url: "https://www.mizyra.org/",
+      description:
+        "Software development, AI, research, design, and digital solutions provider empowering businesses and learners.",
+      inLanguage: "en"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      name: "MIZYRA Institute of Technology",
+      url: "https://www.mizyra.org/",
+      image: "https://www.mizyra.org/logo1.png",
+      areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],
+      description:
+        "Software development, AI and machine learning, research support, UX/UI design, digital marketing, and technology consulting.",
+      email: "mizyra.instituteoftechnology@gmail.com",
+      telephone: "+91 93631 56825"
     }
   ];
 

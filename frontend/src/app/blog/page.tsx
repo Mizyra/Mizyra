@@ -6,8 +6,18 @@ import SectionHeading from "@/components/SectionHeading";
 import { blogPosts } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "News & Events",
-  description: "Latest news, events, and technology guidance from MIZYRA."
+  title: "Technology Insights & Events",
+  description: "Read MIZYRA Institute of Technology insights on AI careers, software engineering, cloud skills, and digital innovation for students, professionals, and businesses.",
+  alternates: {
+    canonical: "https://www.mizyra.org/blog"
+  },
+  keywords: [
+    "AI career roadmap",
+    "developer portfolio guidance",
+    "cloud and DevOps skills",
+    "MIZYRA insights",
+    "technology learning resources"
+  ]
 };
 
 export default function BlogPage() {

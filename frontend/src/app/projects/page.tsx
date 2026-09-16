@@ -5,8 +5,18 @@ import { ArrowRight, Play, Rocket } from "lucide-react";
 import { projectShowcase } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Portfolio-ready technology products, research-driven systems, and digital experiences delivered by MIZYRA."
+  title: "Technology Projects & Case Studies",
+  description: "Explore MIZYRA Institute of Technology projects spanning software development, AI, computer vision, full-stack platforms, and digital transformation case studies.",
+  alternates: {
+    canonical: "https://www.mizyra.org/projects"
+  },
+  keywords: [
+    "MIZYRA projects",
+    "AI projects",
+    "software development case studies",
+    "research and product builds",
+    "full stack portfolio"
+  ]
 };
 
 export default function ProjectsPage() {

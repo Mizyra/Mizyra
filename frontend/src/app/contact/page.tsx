@@ -4,8 +4,18 @@ import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description: "Get in touch with MIZYRA for software development, research, design, and digital marketing support."
+  title: "Contact MIZYRA",
+  description: "Contact MIZYRA Institute of Technology for software development, AI solutions, research support, UI/UX design, and digital growth services in Chennai and Tamil Nadu.",
+  alternates: {
+    canonical: "https://www.mizyra.org/contact"
+  },
+  keywords: [
+    "contact MIZYRA",
+    "software development company in Chennai",
+    "AI solutions company",
+    "research support service",
+    "digital marketing agency Tamil Nadu"
+  ]
 };
 
 const contacts = [

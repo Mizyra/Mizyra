@@ -91,15 +91,18 @@ export default function HomePage() {
           <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-4xl text-center">
               <div className="eyebrow-pill">
-                Engineering • Research • Industry
+                Software Development • AI • Research • Digital Solutions
               </div>
               <h1 className="hero-title mt-8 text-5xl font-medium leading-[1.02] md:text-6xl lg:text-7xl">
                 <span className="block bg-gradient-to-r from-[#F4D06F] via-[#E8C86B] to-[#7DE7C4] bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(212,175,55,0.22)]" style={{ letterSpacing: "0.18em", fontSize: "clamp(3.2rem, 8vw, 8rem)" }}>
                   MIZYRA
                 </span>
+                <span className="mt-4 block text-2xl font-semibold uppercase tracking-[0.18em] text-moonInk md:text-3xl">
+                  Institute of Technology
+                </span>
               </h1>
               <p className="mx-auto mt-6 max-w-4xl text-lg leading-8 text-moonMuted md:text-xl">
-                Start Where Others Stop
+                Software development, AI & machine learning, web design, research support, and digital transformation solutions built for businesses and learners.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
