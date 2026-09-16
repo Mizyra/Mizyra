@@ -91,7 +91,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-4xl text-center">
               <div className="eyebrow-pill">
-                Software Development • AI • Research • Digital Solutions
+                Start where others stop
               </div>
               <h1 className="hero-title mt-8 text-5xl font-medium leading-[1.02] md:text-6xl lg:text-7xl">
                 <span className="block bg-gradient-to-r from-[#F4D06F] via-[#E8C86B] to-[#7DE7C4] bg-clip-text text-transparent drop-shadow-[0_0_24px_rgba(212,175,55,0.22)]" style={{ letterSpacing: "0.18em", fontSize: "clamp(3.2rem, 8vw, 8rem)" }}>
