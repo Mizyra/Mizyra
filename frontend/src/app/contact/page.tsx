@@ -4,7 +4,7 @@ import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Contact MIZYRA",
+  title: "MIZYRA",
   description: "Contact MIZYRA for software development, AI solutions, research support, UI/UX design, and digital growth services in Chennai and Tamil Nadu.",
   alternates: {
     canonical: "https://www.mizyra.org/contact"

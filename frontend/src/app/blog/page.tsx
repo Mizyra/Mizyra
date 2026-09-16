@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { blogPosts } from "@/data/siteData";
 
 export const metadata: Metadata = {
-  title: "Technology Insights & Events",
+  title: "MIZYRA",
   description: "Read MIZYRA insights on AI careers, software engineering, cloud skills, and digital innovation for students, professionals, and businesses.",
   alternates: {
     canonical: "https://www.mizyra.org/blog"

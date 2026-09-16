@@ -19,10 +19,7 @@ const displayFont = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mizyra.org"),
-  title: {
-    default: "MIZYRA | Software Development, AI & Research Solutions",
-    template: "%s | MIZYRA"
-  },
+  title: "MIZYRA",
   description:
     "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
   applicationName: "MIZYRA",
@@ -45,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.mizyra.org/",
-    title: "MIZYRA | Software Development, AI & Research Solutions",
+    title: "MIZYRA",
     description:
       "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
     siteName: "MIZYRA",
@@ -61,7 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MIZYRA | Software Development, AI & Research Solutions",
+    title: "MIZYRA",
     description:
       "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
     images: ["/opengraph-image.png"]
