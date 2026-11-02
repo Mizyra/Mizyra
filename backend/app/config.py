@@ -13,6 +13,10 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 180
     cors_origins: str = "http://localhost:3000"
 
+    # Contact form -> Excel storage
+    contacts_excel_path: str = "contacts.xlsx"
+    contact_timezone: str = "Asia/Kolkata"
+
 
 @lru_cache
 def get_settings() -> Settings:

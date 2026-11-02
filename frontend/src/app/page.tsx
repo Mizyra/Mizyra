@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Award, BrainCircuit, Code2, FileText, GraduationCap, Lightbulb, Microchip, Palette, Rocket, ShieldCheck, Sparkles, TrendingUp, UsersRound, Zap } from "lucide-react";
+import { ArrowRight, Award, BrainCircuit, Code2, Eye, FileText, GraduationCap, Lightbulb, Microchip, Palette, Rocket, ShieldCheck, Sparkles, Target, TrendingUp, UsersRound, Zap } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
 import { projectShowcase } from "@/data/siteData";
+import { submitContact } from "@/lib/api";
 
 const serviceHighlights = [
   {
@@ -48,6 +49,19 @@ const reasons = [
   "Performance-focused digital growth"
 ];
 
+const visionMission = [
+  {
+    title: "Our Vision",
+    text: "To be a trusted technology partner that turns bold ideas into real-world impact through software, research, design, and digital growth.",
+    icon: Eye
+  },
+  {
+    title: "Our Mission",
+    text: "To create a revolution in the tech industry by delivering practical, high-quality technology solutions that help businesses, researchers, and innovators move faster and build better.",
+    icon: Target
+  }
+];
+
 const heroStats = [
   { value: "120+", label: "Project engagements", icon: GraduationCap },
   { value: "8+", label: "Core capability areas", icon: Microchip },
@@ -74,10 +88,36 @@ const programCards = [
 
 export default function HomePage() {
   const [contactSent, setContactSent] = useState(false);
+  const [contactError, setContactError] = useState("");
+  const [isContactSubmitting, setIsContactSubmitting] = useState(false);
 
-  const handleContactSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleContactSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setContactSent(true);
+    if (isContactSubmitting) {
+      return;
+    }
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    setIsContactSubmitting(true);
+    setContactError("");
+    setContactSent(false);
+
+    try {
+      await submitContact({
+        name: String(formData.get("fullName") ?? ""),
+        email: String(formData.get("email") ?? ""),
+        organization: String(formData.get("company") ?? ""),
+        message: String(formData.get("message") ?? "")
+      });
+      form.reset();
+      setContactSent(true);
+    } catch (error) {
+      setContactError(error instanceof Error ? error.message : "Unable to submit your inquiry.");
+    } finally {
+      setIsContactSubmitting(false);
+    }
   };
 
   const featuredProject = projectShowcase[0];
@@ -169,7 +209,22 @@ export default function HomePage() {
             description="MIZYRA focuses on measurable digital execution across software development, research, design systems, and growth-focused marketing."
           />
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {visionMission.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.title} className="glass-panel p-6 md:p-8">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-moonGreen/30 bg-moonSoft/70 text-moonGreen">
+                    <Icon size={22} />
+                  </div>
+                  <h3 className="text-xl font-semibold text-moonInk">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-moonMuted">{item.text}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reasons.map((reason) => (
               <div key={reason} className="neo-surface p-6">
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-2xl border border-moonGreen/30 bg-moonSoft/70 text-moonGreen">
@@ -311,6 +366,12 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link href="/projects" className="neo-btn-secondary inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold">
+              View All Projects & Services <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -343,13 +404,22 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <button className="neo-btn-primary btn-glow shine-on-hover mt-5 rounded-full px-5 py-3 text-sm font-semibold">
-                Send Inquiry
+              <button
+                type="submit"
+                disabled={isContactSubmitting}
+                className="neo-btn-primary btn-glow shine-on-hover mt-5 rounded-full px-5 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                {isContactSubmitting ? "Submitting..." : "Send Inquiry"}
               </button>
 
               {contactSent ? (
                 <p className="mt-4 rounded-2xl border border-moonGreen/50 bg-moonGreen/10 px-4 py-3 text-sm text-moonGreen">
                   Your inquiry has been recorded. We will get back to you shortly.
+                </p>
+              ) : null}
+              {contactError ? (
+                <p className="mt-4 rounded-2xl border border-red-400/50 bg-red-400/10 px-4 py-3 text-sm text-red-400">
+                  {contactError}
                 </p>
               ) : null}
             </form>
@@ -375,9 +445,9 @@ export default function HomePage() {
               <div className="glass-panel p-6">
                 <h3 className="text-xl font-semibold text-moonInk">Contact details</h3>
                 <div className="mt-4 space-y-3 text-sm text-moonInk/80">
-                  <p><strong>Email:</strong> <a href="mailto:mizyra.instituteoftechnology@gmail.com" className="text-moonGreen">mizyra.instituteoftechnology@gmail.com</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:mizyra.official@gmail.com" className="text-moonGreen">mizyra.official@gmail.com</a></p>
                   <p><strong>Phone:</strong> +91 93631 56825</p>
-                  <p><strong>Location:</strong> Chennai, Tamil Nadu</p>
+                  <p><strong>Location:</strong> Nagercoil, Kanyakumari</p>
                 </div>
               </div>
             </aside>

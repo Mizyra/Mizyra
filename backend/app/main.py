@@ -7,16 +7,20 @@ from app.auth import hash_password
 from app.config import get_settings
 from app.database import Base, SessionLocal, engine
 from app.models import BlogPost, Course, User
-from app.routers import admin, applications, auth, blog, courses, dashboard, learning_path
+from app.routers import admin, applications, auth, blog, contact, courses, dashboard, learning_path
 
 settings = get_settings()
 
 app = FastAPI(title=settings.app_name)
 
+# CORS_ORIGINS is a comma-separated env var (see .env.example). Keep
+# development and production origins listed there rather than hard-coding
+# them here. If it's ever left empty, fall back to the local dev origin
+# only — never a wildcard — so the API isn't accidentally left open.
 origins = [origin.strip() for origin in settings.cors_origins.split(",") if origin.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins or ["*"],
+    allow_origins=origins or ["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -149,3 +153,4 @@ app.include_router(applications.router)
 app.include_router(dashboard.router)
 app.include_router(learning_path.router)
 app.include_router(admin.router)
+app.include_router(contact.router)
