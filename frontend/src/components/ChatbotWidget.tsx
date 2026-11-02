@@ -320,7 +320,7 @@ export default function ChatbotWidget() {
 
       <button
         onClick={() => setOpen((state) => !state)}
-        className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-moonGold/70 bg-moonCard shadow-[0_0_20px_rgb(var(--moon-gold)/0.35)] transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-moonGold"
+        className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-moonCard transition hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-moonGold"
         aria-label="Open MIZYRA Guide"
         aria-expanded={open}
       >
