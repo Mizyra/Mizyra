@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/#home", label: "Home" },
   { href: "/#programs", label: "Programs" },
   { href: "/#research", label: "Research & Labs" },
-  { href: "/apply", label: "Admissions" },
+  { href: "/projects", label: "Projects" },
   { href: "/blog", label: "News & Events" }
 ];
 
@@ -57,18 +57,19 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="relative text-[11px] font-semibold uppercase tracking-[0.28em] text-moonInk/76 transition hover:text-moonGreen after:absolute after:-bottom-6 after:left-1/2 after:h-px after:w-0 after:-translate-x-1/2 after:bg-moonGreen after:shadow-[0_0_16px_rgb(var(--moon-green)/0.9)] after:transition-all hover:after:w-16"
+                      className="relative whitespace-nowrap text-[10px] font-semibold uppercase tracking-[0.14em] text-moonInk/76 transition hover:text-moonGreen after:absolute after:-bottom-6 after:left-1/2 after:h-px after:w-0 after:-translate-x-1/2 after:bg-moonGreen after:shadow-[0_0_16px_rgb(var(--moon-green)/0.9)] after:transition-all hover:after:w-16 2xl:text-[11px] 2xl:tracking-[0.2em]"
                   >
                     {link.label}
                   </Link>
                 ))}
               </nav>
 
-              <Link href="/apply" className="neo-btn-secondary hidden shrink-0 items-center gap-2 rounded-full px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.2em] xl:inline-flex 2xl:px-7 2xl:tracking-[0.24em]">
+              <Link href="/apply" className="neo-btn-secondary hidden shrink-0 items-center gap-2 rounded-full px-4 py-2.5 text-[10px] font-semibold uppercase tracking-[0.14em] xl:inline-flex 2xl:px-6 2xl:text-[11px] 2xl:tracking-[0.2em]">
                 Apply Now <ArrowRight size={15} />
               </Link>
               <div className="flex items-center gap-2 xl:hidden">
                 <button
+                  type="button"
                   onClick={() => setOpen((value) => !value)}
                   aria-label="Toggle menu"
                   aria-expanded={open}
@@ -99,13 +100,20 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="mt-4 flex flex-col gap-2">
+              <div className="mt-4 flex flex-col gap-2 sm:flex-row">
                 <Link
                   href="/#contact"
                   className="neo-btn-primary gold-shimmer rounded-full px-4 py-2 text-center text-[10px] font-semibold uppercase tracking-[0.18em]"
                   onClick={() => setOpen(false)}
                 >
                   Get Quote
+                </Link>
+                <Link
+                  href="/apply"
+                  className="neo-btn-secondary rounded-full px-4 py-2 text-center text-[10px] font-semibold uppercase tracking-[0.18em]"
+                  onClick={() => setOpen(false)}
+                >
+                  Apply Now
                 </Link>
               </div>
             </nav>

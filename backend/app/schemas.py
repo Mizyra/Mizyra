@@ -1,6 +1,7 @@
+import re
 from datetime import datetime
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 class Token(BaseModel):
@@ -97,3 +98,51 @@ class BlogPostRead(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+PHONE_PATTERN = re.compile(r"^[0-9+\-()\s]{7,20}$")
+
+
+class ContactCreate(BaseModel):
+    """Matches the fields already present on the Mizyra contact forms
+    (dedicated /contact page and the homepage #contact section)."""
+
+    name: str = Field(..., min_length=2, max_length=120)
+    email: EmailStr
+    phone: str = Field("", max_length=30)
+    organization: str = Field("", max_length=200)
+    message: str = Field(..., min_length=5, max_length=3000)
+
+    @field_validator("name")
+    @classmethod
+    def name_not_blank(cls, value: str) -> str:
+        cleaned = value.strip()
+        if len(cleaned) < 2:
+            raise ValueError("Name must be at least 2 characters long")
+        return cleaned
+
+    @field_validator("phone")
+    @classmethod
+    def phone_format(cls, value: str) -> str:
+        cleaned = value.strip()
+        if cleaned and not PHONE_PATTERN.match(cleaned):
+            raise ValueError("Phone number contains invalid characters")
+        return cleaned
+
+    @field_validator("organization")
+    @classmethod
+    def organization_trim(cls, value: str) -> str:
+        return value.strip()
+
+    @field_validator("message")
+    @classmethod
+    def message_not_blank(cls, value: str) -> str:
+        cleaned = value.strip()
+        if len(cleaned) < 5:
+            raise ValueError("Message must be at least 5 characters long")
+        return cleaned
+
+
+class ContactResponse(BaseModel):
+    success: bool
+    message: str

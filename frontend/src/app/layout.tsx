@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mizyra.org"),
   title: "MIZYRA",
   description:
-    "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+    "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Nagercoil, Kanyakumari, and beyond.",
   applicationName: "MIZYRA",
   keywords: [
     "MIZYRA",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "UI UX design services",
     "research and development support",
     "digital marketing agency",
-    "technology solutions in Chennai",
+    "technology solutions in Nagercoil",
     "Tamil Nadu IT company",
     "Nagercoil software services"
   ],
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     url: "https://www.mizyra.org/",
     title: "MIZYRA",
     description:
-      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Nagercoil, Kanyakumari, and beyond.",
     siteName: "MIZYRA",
     locale: "en_US",
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MIZYRA",
     description:
-      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Chennai, Tamil Nadu, and beyond.",
+      "MIZYRA delivers software development, AI & machine learning, web design, research support, and digital transformation solutions for businesses and learners in Nagercoil, Kanyakumari, and beyond.",
     images: ["/opengraph-image.png"]
   },
   icons: {
@@ -90,23 +90,26 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       alternateName: "MIZYRA",
       url: "https://www.mizyra.org/",
       logo: "https://www.mizyra.org/logo1.png",
-      email: "mizyra.instituteoftechnology@gmail.com",
+      email: "mizyra.official@gmail.com",
       telephone: "+91 93631 56825",
       address: {
         "@type": "PostalAddress",
-        addressLocality: "Chennai",
+        addressLocality: "Nagercoil",
         addressRegion: "Tamil Nadu",
         addressCountry: "IN"
       },
-      areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],
+      areaServed: ["Nagercoil", "Kanyakumari", "Tamil Nadu"],
       description:
         "MIZYRA provides software development, AI & machine learning, UI/UX design, research support, and digital transformation services.",
-      sameAs: ["https://www.mizyra.org/"],
+      sameAs: [
+        "https://www.linkedin.com/company/mizyra/posts/?feedView=all",
+        "https://www.instagram.com/mizyra.tech?xtok=MTZwc3lsZjBwenVuZw=="
+      ],
       contactPoint: {
         "@type": "ContactPoint",
         contactType: "sales",
         telephone: "+91 93631 56825",
-        email: "mizyra.instituteoftechnology@gmail.com",
+        email: "mizyra.official@gmail.com",
         areaServed: "IN",
         availableLanguage: ["English"]
       }
@@ -127,10 +130,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       name: "MIZYRA",
       url: "https://www.mizyra.org/",
       image: "https://www.mizyra.org/logo1.png",
-      areaServed: ["Chennai", "Tamil Nadu", "Nagercoil", "Kanyakumari"],
+      areaServed: ["Nagercoil", "Kanyakumari", "Tamil Nadu"],
       description:
         "Software development, AI and machine learning, research support, UX/UI design, digital marketing, and technology consulting.",
-      email: "mizyra.instituteoftechnology@gmail.com",
+      email: "mizyra.official@gmail.com",
       telephone: "+91 93631 56825"
     }
   ];

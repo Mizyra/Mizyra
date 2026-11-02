@@ -10,3 +10,8 @@ __pycache__/
 venv/
 .venv/
 .vscode/
+
+# Generated data files (contain user-submitted data — do not commit)
+backend/*.db
+backend/contacts.xlsx
+backend/contacts.xlsx.lock

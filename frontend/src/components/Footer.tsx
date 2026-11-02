@@ -1,6 +1,5 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import Image from "next/image";
-import { BriefcaseBusiness, Camera, Play } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -22,15 +21,25 @@ export default function Footer() {
               Building technology systems, research support, and digital experiences that move businesses forward.
             </p>
             <div className="mt-4 flex items-center gap-3 text-moonInk/70">
-              <Link href="#" aria-label="LinkedIn" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <BriefcaseBusiness size={18} />
-              </Link>
-              <Link href="#" aria-label="Instagram" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <Camera size={18} />
-              </Link>
-              <Link href="#" aria-label="YouTube" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
-                <Play size={18} />
-              </Link>
+              <a href="https://www.linkedin.com/company/mizyra/posts/?feedView=all" aria-label="MIZYRA on LinkedIn" target="_blank" rel="noreferrer" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-[18px] w-[18px]">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M8 10v7M8 7v.01M12 17v-4a3 3 0 0 1 6 0v4M12 10v7" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/mizyra.tech?xtok=MTZwc3lsZjBwenVuZw==" aria-label="MIZYRA on Instagram" target="_blank" rel="noreferrer" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-[18px] w-[18px]">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+              </a>
+              <a href="https://wa.me/919363156825" aria-label="Message MIZYRA on WhatsApp" target="_blank" rel="noreferrer" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-[18px] w-[18px]">
+                  <path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.9a8.2 8.2 0 1 1 16-3.4Z" />
+                  <path d="M8.3 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4 0 .5l-.5.6c-.2.2-.2.3-.1.5.3.6.8 1.1 1.3 1.5.5.4 1 .7 1.5.9.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.5.7c.3.1.4.2.4.4 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.6-.8-.1-1.8-.5-2.9-1.2-1.4-.9-2.4-2-3-3.1-.5-.9-.7-1.7-.6-2.3.1-.5.5-1.1 1-1.2Z" />
+                </svg>
+              </a>
             </div>
           </div>
 
@@ -56,12 +65,12 @@ export default function Footer() {
             <h4 className="font-semibold text-moonInk">Contact</h4>
             <ul className="mt-3 space-y-2 text-sm text-moonInk/70">
               <li>
-                <a href="mailto:mizyra.instituteoftechnology@gmail.com" className="break-words hover:text-moonGreen">
-                  mizyra.instituteoftechnology@gmail.com
+                <a href="mailto:mizyra.official@gmail.com" className="break-words hover:text-moonGreen">
+                  mizyra.official@gmail.com
                 </a>
               </li>
               <li>+91 93631 56825</li>
-              <li>Chennai, Tamil Nadu</li>
+              <li>Nagercoil, Kanyakumari</li>
             </ul>
           </div>
         </div>

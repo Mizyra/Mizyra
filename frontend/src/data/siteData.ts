@@ -206,76 +206,78 @@ export const stats = [
 
 const projectShowcaseSeed = [
   {
-    title: "AI Chat Assistant Suite",
-    description: "A multi-domain conversational assistant for admissions and technical guidance.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Python", "FastAPI", "LLM APIs", "PostgreSQL"]
-  },
-  {
-    title: "Smart IoT Automation Hub",
-    description: "Remote monitoring and rule-based automation platform for smart environments.",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Raspberry Pi", "MQTT", "Node.js", "Grafana"]
-  },
-  {
-    title: "Face Recognition Attendance",
-    description: "Secure attendance system with liveness checks and analytics dashboard.",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["OpenCV", "TensorFlow", "FastAPI", "React"]
-  },
-  {
-    title: "Full Stack Learning Platform",
-    description: "Role-based LMS with assessments, progress tracking, and mentor collaboration.",
+    title: "EcoSphereHub",
+    description: "An environmental web project focused on bringing sustainability ideas and community action together.",
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Next.js", "TypeScript", "PostgreSQL", "Docker"]
+    technologies: ["Web Development", "Sustainability", "Community"],
+    repoUrl: "https://github.com/M-Chandran/EcoSphereHub"
   },
   {
-    title: "Cybersecurity Command Center",
-    description: "SOC dashboard for incident triage, response workflows, and risk reporting.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["SIEM", "Elastic", "Threat Intel", "React"]
+    title: "Urban Safety Command Center",
+    description: "A Flask-based crime analysis platform for exploring historical data and forecasting trends.",
+    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Python", "Flask", "Machine Learning"],
+    repoUrl: "https://github.com/M-Chandran/Urban-Safety-Command-Center"
   },
   {
-    title: "Cloud FinOps Optimizer",
-    description: "Usage analytics platform to optimize cloud cost and resource allocation.",
+    title: "Image Dehazing Web Application",
+    description: "A Flask web app that restores hazy images using computer vision and deep-learning techniques.",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Python", "Flask", "Computer Vision"],
+    repoUrl: "https://github.com/M-Chandran/Image-Dehazing-Web-Application"
+  },
+  {
+    title: "Privacy-Enhanced Traceable Anonymous Transaction System",
+    description: "A Python and Flask project exploring anonymous transactions with traceability and privacy.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["AWS", "BigQuery", "Looker", "Node.js"]
+    technologies: ["Python", "Flask", "Privacy"],
+    repoUrl: "https://github.com/M-Chandran/Privacy-Enhanced-Traceable-Anonymous-Transaction-System"
   },
   {
-    title: "HealthTech Scheduling Grid",
-    description: "Real-time scheduling engine for clinics with automated reminders.",
-    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Next.js", "Redis", "Twilio", "PostgreSQL"]
+    title: "Solar Panel Defect Detection",
+    description: "An AI-powered system for detecting and localizing defects in solar panels.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Python", "AI", "Defect Detection"],
+    repoUrl: "https://github.com/M-Chandran/Solar-Panel-Defect-Detection"
   },
   {
-    title: "Smart Retail Vision AI",
-    description: "Shelf analytics and demand forecasting with edge vision models.",
+    title: "SecureChain: AI + Blockchain Digital Security Platform",
+    description: "A Flask security platform for document authenticity checks, fraud prevention, and tamper-proof certification.",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["PyTorch", "Edge AI", "OpenCV", "FastAPI"]
+    technologies: ["Python", "Flask", "AI", "Blockchain"],
+    repoUrl: "https://github.com/M-Chandran/SecureChain-AI-Blockchain-Digital-Security-Platform"
   },
   {
-    title: "FinTech Risk Analyzer",
-    description: "Model-driven credit risk system with explainable dashboards.",
+    title: "Advanced Image Forgery Detection System",
+    description: "A Python project focused on identifying manipulated or forged images.",
+    image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["Python", "Image Analysis", "Security"],
+    repoUrl: "https://github.com/M-Chandran/Advanced-Image-Forgery-Detection-System"
+  },
+  {
+    title: "Scalable IoT Project",
+    description: "An IoT management platform designed for real-time data processing, edge-cloud storage, and secure audit trails.",
     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Python", "XGBoost", "Dash", "SQL"]
+    technologies: ["TypeScript", "IoT", "Edge & Cloud", "Blockchain"],
+    repoUrl: "https://github.com/M-Chandran/Scalable_IoT_Project"
   },
   {
-    title: "Robotics Fleet Manager",
-    description: "Control center for autonomous lab robots with real-time telemetry.",
+    title: "Field Management System",
+    description: "A web app for coordinating mobile teams, job schedules, field tracking, timesheets, and reporting.",
     image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["ROS", "IoT", "Telemetry", "React"]
+    technologies: ["TypeScript", "Workforce Management", "Analytics"],
+    repoUrl: "https://github.com/M-Chandran/Field-management-web"
+  },
+  {
+    title: "AI Dark Pattern Buster",
+    description: "A browser extension that uses AI to detect manipulative design patterns and alert users.",
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    technologies: ["JavaScript", "AI", "Browser Extension"],
+    repoUrl: "https://github.com/M-Chandran/AI-Dark-Pattern-Buster"
   }
 ];
 
-export const projectShowcase = Array.from({ length: 50 }, (_, index) => {
-  const base = projectShowcaseSeed[index % projectShowcaseSeed.length];
-  const sequence = String(index + 1).padStart(2, "0");
-  return {
-    ...base,
-    title: `${base.title} ${sequence}`,
-    image: `${base.image}&sig=${index + 1}`
-  };
-});
+export const projectShowcase = projectShowcaseSeed;
 
 export const testimonials = [
   {
@@ -429,5 +431,3 @@ export function durationMatchesFilter(durationWeeks: number, filter: DurationFil
   if (filter === "13-16 Weeks") return durationWeeks >= 13 && durationWeeks <= 16;
   return durationWeeks > 16;
 }
-
-
