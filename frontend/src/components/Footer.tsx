@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { WHATSAPP_CHAT_URL } from "@/lib/whatsapp";
 
 export default function Footer() {
   return (
@@ -34,7 +35,7 @@ export default function Footer() {
                   <path d="M17.5 6.5h.01" />
                 </svg>
               </a>
-              <a href="https://wa.me/919363156825" aria-label="Message MIZYRA on WhatsApp" target="_blank" rel="noreferrer" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
+              <a href={WHATSAPP_CHAT_URL} aria-label="Message MIZYRA on WhatsApp" target="_blank" rel="noreferrer" className="rounded-full border border-moonBorder/70 p-2 hover:text-moonGreen">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-[18px] w-[18px]">
                   <path d="M20.2 11.7a8.2 8.2 0 0 1-12.1 7.2L3 20l1.2-4.9a8.2 8.2 0 1 1 16-3.4Z" />
                   <path d="M8.3 8.1c.2-.5.4-.5.7-.5h.5c.2 0 .3.1.4.4l.7 1.6c.1.2.1.4 0 .5l-.5.6c-.2.2-.2.3-.1.5.3.6.8 1.1 1.3 1.5.5.4 1 .7 1.5.9.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.6-.1l1.5.7c.3.1.4.2.4.4 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-1.9.6-.8-.1-1.8-.5-2.9-1.2-1.4-.9-2.4-2-3-3.1-.5-.9-.7-1.7-.6-2.3.1-.5.5-1.1 1-1.2Z" />

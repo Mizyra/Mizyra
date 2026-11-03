@@ -5,6 +5,7 @@ import { FormEvent, useState } from "react";
 import PageReveal from "@/components/PageReveal";
 import SectionHeading from "@/components/SectionHeading";
 import { submitContact } from "@/lib/api";
+import { WHATSAPP_CHAT_URL } from "@/lib/whatsapp";
 
 const contacts = [
   {
@@ -129,7 +130,7 @@ export default function ContactForm() {
 
               <div className="mt-5 flex flex-wrap gap-3">
                 <a
-                  href="https://wa.me/919363156825"
+                  href={WHATSAPP_CHAT_URL}
                   target="_blank"
                   rel="noreferrer"
                   className="neo-btn-primary btn-glow shine-on-hover inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold"

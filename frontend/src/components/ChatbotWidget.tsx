@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Send } from "lucide-react";
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { courses, projectShowcase } from "@/data/siteData";
+import { WHATSAPP_CHAT_URL } from "@/lib/whatsapp";
 
 type ChatAction = {
   label: string;
@@ -72,7 +73,7 @@ function answerQuestion(input: string): Pick<ChatMessage, "text" | "actions"> {
     return {
       text: "MIZYRA's listed phone number is +91 93631 56825. You can also reach the team on WhatsApp.",
       actions: [
-        { label: "WhatsApp", href: "https://wa.me/919363156825" },
+        { label: "WhatsApp", href: WHATSAPP_CHAT_URL },
         { label: "Call", href: "tel:+919363156825" }
       ]
     };
@@ -328,7 +329,7 @@ export default function ChatbotWidget() {
       </button>
 
       <a
-        href="https://wa.me/919363156825"
+        href={WHATSAPP_CHAT_URL}
         target="_blank"
         rel="noreferrer"
         aria-label="Chat with MIZYRA on WhatsApp"
